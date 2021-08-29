@@ -31,6 +31,7 @@ function draw() {
   });
 
   if(int(hin)===h && int(min)===m && int(sin)===s && gameState==="on") {
+    fill(255);
     text("alarm",200,200);
   }
 }
