@@ -34,7 +34,7 @@ function draw() {
     gameState="end";
   }
 
-  if(gameState==="end) {
+  if(gameState==="end") {
     fill(255);
     text("Alarm",200,200);
   }
