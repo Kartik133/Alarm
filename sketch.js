@@ -38,9 +38,5 @@ function draw() {
     fill(255);
     text("Alarm",200,200);
   }
-  
-  fill(255);
-  text(int(hv) + ":" + int(mv) + ":" + int(sv),200,200);
-  text(h + ":" + m + ":" + s,200,300);
 }
 
