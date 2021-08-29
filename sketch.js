@@ -1,7 +1,12 @@
 var h,m,s;
 var hin,min,sin,button;
 var hv,mv,sv;
+var sound;
 var gameState = "start";
+
+function preload() {
+  sound = loadSound("Radar.mp3");
+}
 
 function setup() {
   createCanvas(400,400);
@@ -37,6 +42,7 @@ function draw() {
   if(gameState==="end") {
     fill(255);
     text("Alarm",200,200);
+    sound.play();
   }
 }
 
