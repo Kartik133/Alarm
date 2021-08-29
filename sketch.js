@@ -1,8 +1,9 @@
 var h,m,s;
 var hin,min,sin,button;
 var hv,mv,sv;
+var gameState = "start";
 
-funtion setup() {
+function setup() {
   createCanvas(400,400);
   
   hin = createInput("hour");
@@ -26,9 +27,10 @@ function draw() {
     hv = hin.value();
     mv = min.value();
     sv = sin.value();
+    gameState = "on";
   });
 
-  if(int(hin)===h && int(min)===m && int(sin)===s) {
+  if(int(hin)===h && int(min)===m && int(sin)===s && gameState==="on") {
     text("alarm",200,200);
   }
 }
