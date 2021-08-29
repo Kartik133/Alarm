@@ -30,7 +30,7 @@ function draw() {
     gameState = "on";
   });
 
-  if(int(hin)===h && int(min)===m && int(sin)===s && gameState==="on") {
+  if(int(hv)===h && int(mv)===m && int(sv)===s && gameState==="on") {
     fill(255);
     text("alarm",200,200);
   }
