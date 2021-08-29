@@ -10,14 +10,14 @@ function setup() {
   min = createInput("minute");
   sin = createInput("second");
   button = createButton("alarm");
-
-  h = hour();
-  m = minute();
-  s = second();
 }
 
 function draw() {
   background(0);
+
+  h = hour();
+  m = minute();
+  s = second();
 
   button.mousePressed(()=>{
     hin.hide();
@@ -31,8 +31,12 @@ function draw() {
   });
 
   if(int(hv)===h && int(mv)===m && int(sv)===s && gameState==="on") {
+    gameState="end";
+  }
+
+  if(gameState==="end) {
     fill(255);
-    text("alarm",200,200);
+    text("Alarm",200,200);
   }
 }
 
