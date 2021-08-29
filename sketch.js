@@ -40,6 +40,7 @@ function draw() {
   }
   
   fill(255);
-  text(int(hv),200,200);
+  text(int(hv) + ":" + int(mv) + ":" + int(sv),200,200);
+  text(h + ":" + m + ":" + s,200,200);
 }
 
