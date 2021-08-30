@@ -11,10 +11,14 @@ function preload() {
 function setup() {
   createCanvas(400,400);
   
-  hin = createInput("hour");
-  min = createInput("minute");
-  sin = createInput("second");
-  button = createButton("alarm");
+  hin = createInput("Hour");
+  min = createInput("Minute");
+  sin = createInput("Second");
+  button = createButton("Alarm");
+  hin.position(100,150);
+  min.position(100,200);
+  sin.position(100,250);
+  button.position(150,300);
 }
 
 function draw() {
