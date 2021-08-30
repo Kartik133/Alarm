@@ -1,11 +1,13 @@
 var h,m,s;
-var hin,min,sin,button;
+var hin,min,sin,button,stop;
 var hv,mv,sv;
 var sound;
 var gameState = "start";
+var a
 
 function preload() {
   sound = loadSound("Radar.mp3");
+  a = loadFont("h.ttf");
 }
 
 function setup() {
@@ -14,11 +16,15 @@ function setup() {
   hin = createInput("Hour");
   min = createInput("Minute");
   sin = createInput("Second");
-  button = createButton("Alarm");
+  button = createButton("Set Alarm");
+  stop = createButton("Stop");
   hin.position(100,150);
   min.position(100,200);
   sin.position(100,250);
-  button.position(150,300);
+  stop.position(150,300);
+  button.position(140,300);
+
+  stop.hide();
 }
 
 function draw() {
@@ -39,6 +45,17 @@ function draw() {
     gameState = "on";
   });
 
+  stop.mousePressed(()=>{
+    stop.hide();
+    sound.stop();
+  });
+
+  if(gameState==="on") {
+    fill(255);
+    textFont(a);
+    text("Your Alarm Has Been Set");
+  }
+
   if(int(hv)===h && int(mv)===m && int(sv)===s && gameState==="on") {
     gameState="end";
   }
@@ -47,6 +64,7 @@ function draw() {
     fill(255);
     text("Alarm",200,200);
     sound.play();
+    stop.show();
   }
 }
 
