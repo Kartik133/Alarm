@@ -22,11 +22,15 @@ function setup() {
   hin.position(width/2-100,height/2-100);
   min.position(width/2-100,height/2);
   sin.position(width/2-100,height/2+100);
-  stops.position(width/2,height/2+50);
-  button.position(width/2-100,height/2+150);
+  stops.position(width/50,height/2+30);
+  button.position(width/2-50,height/2+150);
   hin.style("height","30px");
   min.style("height","30px");
   sin.style("height","30px");
+  button.style("width","60px");
+  button.style("height","30px");
+  stops.style("width","30px");
+  stops.style("height","30px");
 }
 
 function draw() {
