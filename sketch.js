@@ -81,7 +81,7 @@ function draw() {
   if(gameState==="on") {
     fill(255);
     textFont(a);
-    textSize(30);
+    textSize(50);
     textAlign(CENTER);
     text("Your Alarm Has Been Set",width/2,height/2);
   }
