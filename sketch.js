@@ -23,7 +23,7 @@ function setup() {
   min.position(width/2-100,height/2);
   sin.position(width/2-100,height/2+100);
   stops.position(width/50,height/2+30);
-  button.position(width/2-60,height/2+150);
+  button.position(width/2-40,height/2+150);
   hin.style("height","30px");
   min.style("height","30px");
   sin.style("height","30px");
