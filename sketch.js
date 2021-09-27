@@ -45,8 +45,8 @@ function draw() {
 
     push();
       textAlign(CENTER);
-      textSize(30);
-      text("NOTE:- ENTER HOUR IN 24 HOUR FORMAT.",width/2,height/2-200);
+      textSize(50);
+      text("NOTE:- ENTER HOUR IN 24 HOUR FORMAT.",width/2,height/2-350);
     pop();
 
     text("Hour",100,145);
