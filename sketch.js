@@ -12,7 +12,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(400,400);
+  createCanvas(windowWidth,windowHeight);
   
   hin = createInput("");
   min = createInput("");
@@ -45,7 +45,7 @@ function draw() {
 
     push();
       textAlign(CENTER);
-      text("NOTE:- ENTER HOUR IN 24 HOUR FORMAT.",200,70);
+      text("NOTE:- ENTER HOUR IN 24 HOUR FORMAT.",width/2,height/2-300);
     pop();
 
     text("Hour",100,145);
@@ -76,7 +76,7 @@ function draw() {
     textFont(a);
     textSize(30);
     textAlign(CENTER);
-    text("Your Alarm Has Been Set",200,200);
+    text("Your Alarm Has Been Set",width/2,height/2);
   }
 
   if(int(hv)===h && int(mv)===m && int(sv)===s && gameState==="on") {
@@ -88,7 +88,7 @@ function draw() {
     textFont(a);
     textSize(20);
     textAlign(CENTER);
-    text("Alarm",200,200);
+    text("Alarm",width/2,height/2);
     sound.play();
     stops.show();
     count++;
