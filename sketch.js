@@ -20,10 +20,10 @@ function setup() {
   button = createButton("Set Alarm");
   stops = createButton("Stop");
   hin.position(width/2-100,height/2-100);
-  min.position(width/2-100,height/2-50);
-  sin.position(width/2-100,height/2);
+  min.position(width/2-100,height/2);
+  sin.position(width/2-100,height/2+100);
   stops.position(width/2,height/2+50);
-  button.position(width/2-20,height/2+100);
+  button.position(width/2-100,height/2+150);
   hin.style("height","30px");
   min.style("height","30px");
   sin.style("height","30px");
@@ -52,9 +52,12 @@ function draw() {
       text("NOTE:- ENTER HOUR IN 24 HOUR FORMAT.",width/2,height/2-350);
     pop();
 
-    text("Hour",width/2-100,height/2-130);
-    text("Minute",width/2-100,height/2-80);
-    text("Second",width/2-100,height/2-30);
+    push();
+     textSize(50);
+     text("Hour",width/2-100,height/2-130);
+     text("Minute",width/2-100,height/2-80);
+     text("Second",width/2-100,height/2-30);
+    pop();
   }
 
   button.mousePressed(()=>{
