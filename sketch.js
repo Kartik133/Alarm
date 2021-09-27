@@ -24,6 +24,9 @@ function setup() {
   sin.position(width/2-100,height/2);
   stops.position(width/2,height/2+50);
   button.position(width/2-20,height/2+100);
+  hin.style("height",30px);
+  hin.style("height",30px);
+  hin.style("height",30px);
 }
 
 function draw() {
