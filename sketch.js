@@ -49,9 +49,9 @@ function draw() {
       text("NOTE:- ENTER HOUR IN 24 HOUR FORMAT.",width/2,height/2-350);
     pop();
 
-    text("Hour",width/2-100,height/2-70);
-    text("Minute",width/2-100,height/2-20);
-    text("Second",width/2-100,height/2+30);
+    text("Hour",width/2-100,height/2-130);
+    text("Minute",width/2-100,height/2-80);
+    text("Second",width/2-100,height/2-30);
   }
 
   button.mousePressed(()=>{
