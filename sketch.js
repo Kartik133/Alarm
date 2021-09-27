@@ -19,11 +19,11 @@ function setup() {
   sin = createInput("");
   button = createButton("Set Alarm");
   stops = createButton("Stop");
-  hin.position(100,150);
-  min.position(100,200);
-  sin.position(100,250);
-  stops.position(180,230);
-  button.position(140,300);
+  hin.position(width/2-100,height/2-100);
+  min.position(width/2-100,height/2-50);
+  sin.position(width/2-100,height/2);
+  stops.position(width/2,height/2+50);
+  button.position(width/2-20,height/2+100);
 }
 
 function draw() {
@@ -49,9 +49,9 @@ function draw() {
       text("NOTE:- ENTER HOUR IN 24 HOUR FORMAT.",width/2,height/2-350);
     pop();
 
-    text("Hour",100,145);
-    text("Minute",100,195);
-    text("Second",100,245);
+    text("Hour",width/2-100,height/2-70);
+    text("Minute",width/2-100,height/2-20);
+    text("Second",width/2-100,height/2+30);
   }
 
   button.mousePressed(()=>{
