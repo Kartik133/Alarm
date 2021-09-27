@@ -22,7 +22,7 @@ function setup() {
   hin.position(width/2-100,height/2-100);
   min.position(width/2-100,height/2);
   sin.position(width/2-100,height/2+100);
-  stops.position(width/2-50,height/2+200);
+  stops.position(width/2-50,height/2+100);
   button.position(width/2-50,height/2+200);
   hin.style("height","30px");
   min.style("height","30px");
@@ -30,7 +30,7 @@ function setup() {
   button.style("width","80px");
   button.style("height","60px");
   stops.style("width","50px");
-  stops.style("height","60px");
+  stops.style("height","40px");
 }
 
 function draw() {
@@ -97,7 +97,7 @@ function draw() {
   if(gameState==="end") {
     fill(255);
     textFont(a);
-    textSize(20);
+    textSize(50);
     textAlign(CENTER);
     text("Alarm",width/2,height/2);
     sound.play();
