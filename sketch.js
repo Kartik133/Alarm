@@ -27,8 +27,8 @@ function setup() {
   hin.style("height","30px");
   min.style("height","30px");
   sin.style("height","30px");
-  button.style("width","80px");
-  button.style("height","60px");
+  button.style("width","160px");
+  button.style("height","120px");
   stops.style("width","50px");
   stops.style("height","60px");
 }
