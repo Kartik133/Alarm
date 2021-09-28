@@ -23,7 +23,7 @@ function TimeIt() {
 function setup() {
   createCanvas(windowWidth,windowHeight);
   
-  setInterval(1000,TimeIt);
+  setInterval(TimeIt,1000);
   
   hin = createInput("");
   min = createInput("");
