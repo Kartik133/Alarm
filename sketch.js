@@ -14,8 +14,8 @@ function preload() {
 function TimeIt() {
  if(gameState==="on") {
    ccc++;
-   h+=floor(count/3600); 
-   m+=floor(count/60);
+   h+=floor(ccc/3600); 
+   m+=floor(ccc/60);
    s+=ccc;
  }
 }
