@@ -16,7 +16,7 @@ function TimeIt() {
    ccc++;
    h+=floor(ccc/3600); 
    m+=floor(ccc/60);
-   s+=ccc;
+   s+=ccc%60;
  }
 }
 
