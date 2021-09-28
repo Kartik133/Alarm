@@ -46,6 +46,8 @@ function setup() {
 
 function draw() {
   background(0);
+  
+  console.log(h+";"+m+";"+s+";"+ccc);
 
   if(gameState==="start") {
     stops.hide();
