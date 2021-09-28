@@ -4,15 +4,26 @@ var hv,mv,sv;
 var sound;
 var gameState = "start";
 var a;
-var count = 0;
+var count = 0,ccc = 0;;
 
 function preload() {
   sound = loadSound("Radar.mp3");
   a = loadFont("h.TTF");
 }
 
+function TimeIt() {
+ if(gameState==="on") {
+   ccc++;
+   h+=floor(count/3600); 
+   m+=floor(count/60);
+   s+=ccc;
+ }
+}
+
 function setup() {
   createCanvas(windowWidth,windowHeight);
+  
+  setInterval(1000,TimeIt);
   
   hin = createInput("");
   min = createInput("");
@@ -35,10 +46,6 @@ function setup() {
 
 function draw() {
   background(0);
-
-  h = hour();
-  m = minute();
-  s = second();
 
   if(gameState==="start") {
     stops.hide();
@@ -65,13 +72,19 @@ function draw() {
   }
 
   button.mousePressed(()=>{
+    h = hour();
+    m = minute();
+    s = second();
+    
     hin.hide();
     min.hide();
     sin.hide();
     button.hide();
+    
     hv = hin.value();
     mv = min.value();
     sv = sin.value();
+    
     gameState = "on";
   });
 
