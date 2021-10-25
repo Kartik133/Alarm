@@ -67,9 +67,9 @@ function draw() {
 
     push();
      textSize(50);
-     text("Hour",width/2-100,height/2-110);
-     text("Minute",width/2-100,height/2-10);
-     text("Second",width/2-100,height/2+90);
+     text("HOUR",width/2-100,height/2-110);
+     text("MINUTE",width/2-100,height/2-10);
+     text("SECOND",width/2-100,height/2+90);
     pop();
   }
 
