@@ -8,7 +8,7 @@ var count = 0,ccc = 0;;
 
 function preload() {
   sound = loadSound("Radar.mp3");
-  a = loadFont("h.TTF");
+  a = loadFont("h.ttf");
 }
 
 function TimeIt() {
